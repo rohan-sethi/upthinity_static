@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Upthinity</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+		
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title">Success !</h4>
+			</div>
+			<div class="modal-body">
+			  <p class="resdata"></p>
+			  <p class="pub"></p>
+			  <p class="pri"></p>
+			  <p class="esc"></p>
+			  <p class="ret"></p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+
+	
+	
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" >
+				<span class="contact100-form-title">
+					Upthinity
+				</span>
+				<span class="contact100-form-title" style="font-size:15px" >Registration</span>
+
+				<div class="wrap-input100 validate-input dname" data-validate="Name is required">
+					<span class="label-input100">Public Name</span>
+					<input class="input100 name" type="text" name="name" placeholder="Enter your name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 dshare" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Community Share</span>
+					<input class="input100 samount" type="text" name="email" placeholder="Percentage to be distributed">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select inputclick">
+					<span class="label-input100">Register As</span>
+					<div>
+						<select class="selection-2" name="service">
+							<option>Member</option>
+							<option>Delegate</option>
+						
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+					
+				</div>
+				<div class="container-contact100-form-btn">
+						<div class="wrap-contact100-form-btn">
+							<div class="contact100-form-bgbtn"></div>
+							<button class="contact100-form-btn btnsubmitdel" >
+								<span>
+									Submit
+									<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+								</span>
+							</button>
+							
+							<div class="loaddel"></div>
+						</div>
+	
+					</div>
+				<!-- <div class="wrap-input100 input100-select">
+					<span class="label-input100">Budget</span>
+					<div>
+						<select class="selection-2" name="budget">
+							<option>Select Budget</option>
+							<option>1500 $</option>
+							<option>2000 $</option>
+							<option>2500 $</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div> -->
+
+			
+
+				
+
+				<span class="contact100-form-title" style="font-size:15px;margin:10px" >OR</span>
+				<div class="wrap-input100 validate-input login " data-validate="Name is required">
+					<span class="label-input100">Login</span>
+					<input class="input100 loginsecret" type="password" name="name" placeholder="Enter Your Secret">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+						<div class="checkbox">
+								<label><input type="checkbox" class="isdel" value="">Login as Delegate</label>
+							  </div>
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn btnsubmit" >
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+						
+	<button class="contact100-form-btn swap" >
+		<span>
+			Swap amount
+			<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+		</span>
+	</button>
+	<button class="contact100-form-btn history" >
+		<span>
+			Transaction History
+			<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+		</span>
+	</button>
+						<div class="load"></div>
+						
+					</div>
+
+				</div>
+				
+				<div class="alert alert-danger txterr">
+					<strong>Error!</strong> No matching account found !
+				  </div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="js/main2.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
